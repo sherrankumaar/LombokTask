@@ -1,29 +1,38 @@
-# Lombok Maven Project 🚀
+# LombokTask 🚀
 
-Welcome to my **Lombok** project created via a **Maven Archetype**! This repository demonstrates how to reduce boilerplate code by using Lombok in a simple Java application with a `Car` class and a `Main` class.
+Welcome to **LombokTask** – a simple Java project demonstrating how to eliminate boilerplate code using **Lombok**. This project was created with a Maven Archetype and features a `Car` class with only fields, along with a `Main` class to show off Lombok’s auto-generated methods.
 
 ---
 
-## Project Overview 📌
+## 📌 Overview
 
-- **Project Type:** Maven (using a quickstart archetype)
+- **Project Type:** Maven (created via Maven Archetype)
 - **Language:** Java
 - **Key Library:** [Lombok](https://projectlombok.org/)  
-  Lombok auto-generates getters, setters, `equals()`, `hashCode()`, and `toString()`, so you don’t have to write all that boilerplate code!
+  Lombok helps reduce repetitive code by generating getters, setters, constructors, `equals()`, `hashCode()`, and `toString()` methods at compile time.
 
 ---
 
-## Technologies Used 🛠
+## 🛠 Technologies Used
 
 - **Java** (version 17 or above)
 - **Maven** (for dependency management)
 - **Lombok** (version 1.18.32)
-- **IntelliJ IDEA** (or any Java IDE you prefer)
+- **IntelliJ IDEA** (recommended IDE)
 
 ---
 
-## Getting Started 🚧
+## 🗂 Project Structure
 
-1. **Clone** this repository:
+
+- **`pom.xml`**: Contains Maven configurations and the Lombok dependency.
+- **`Car.java`**: A simple Java class annotated with Lombok to auto-generate common methods.
+- **`Main.java`**: The entry point of the application that creates and compares two `Car` objects.
+
+---
+
+## 🚧 Getting Started
+
+1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YourUsername/YourRepo.git
+   git clone https://github.com/sherrankumaar/LombokTask.git
