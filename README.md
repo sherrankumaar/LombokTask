@@ -1,4 +1,4 @@
-# 🚗 Car Equality Check using Lombok (Vistula Task)
+# 🚗 LombokTaskForVolunteers 
 
 This project demonstrates how to use **Project Lombok** in Java to simplify model class creation and override equality logic using only selected fields — in this case, comparing only the `brand` field of a `CarWithLombok` object.
 
@@ -30,9 +30,12 @@ src/ Main.java // Main class to run and compare two car objects CarWithLombok.ja
 | `@NoArgsConstructor` | Generates a no-args constructor |
 | `@EqualsAndHashCode(of = "brand")` | Restricts equality and hash code generation to the `brand` field only |
 
-## 🖥️ Output Example
+## 🧪 Output Example
 
-✔️ `equals()` → `true`  
-✔️ `hashCode()` → Same for both
-
+```text
+Car 1: Car{model='GLE', brand='Mercedes', year=2020, price=350000, color='white', quantity=5}
+Car 2: Car{model='GLC', brand='Mercedes', year=2023, price=200000, color='silver', quantity=3}
+Are both cars equal? true
+Car1 hashCode: -12345678
+Car2 hashCode: -12345678
 
