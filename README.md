@@ -1,38 +1,38 @@
-# LombokTask 🚀
+# 🚗 Car Equality Check using Lombok (Vistula Task)
 
-Welcome to **LombokTask** – a simple Java project demonstrating how to eliminate boilerplate code using **Lombok**. This project was created with a Maven Archetype and features a `Car` class with only fields, along with a `Main` class to show off Lombok’s auto-generated methods.
+This project demonstrates how to use **Project Lombok** in Java to simplify model class creation and override equality logic using only selected fields — in this case, comparing only the `brand` field of a `CarWithLombok` object.
 
----
+## ✅ Task Objective
 
-## 📌 Overview
+- Create a `CarWithLombok` class using Lombok annotations.
+- Generate all necessary methods (`getters`, `setters`, `equals`, `hashCode`, etc.) automatically.
+- Customize `equals()` and `hashCode()` to consider only the `brand` field.
+- Create two different objects (different `model`, `year`, etc.) but with the **same `brand`**.
+- Ensure:
+  - `equals()` returns `true`
+  - `hashCode()` returns the same value for both
 
-- **Project Type:** Maven (created via Maven Archetype)
-- **Language:** Java
-- **Key Library:** [Lombok](https://projectlombok.org/)  
-  Lombok helps reduce repetitive code by generating getters, setters, constructors, `equals()`, `hashCode()`, and `toString()` methods at compile time.
+## 🔧 Technologies Used
 
----
+- Java 17+
+- IntelliJ IDEA
+- Lombok (via `@Data`, `@AllArgsConstructor`, `@NoArgsConstructor`, `@EqualsAndHashCode`)
 
-## 🛠 Technologies Used
+## 📁 Project Structure
+src/ Main.java // Main class to run and compare two car objects CarWithLombok.java // Car model class using Lombok annotations
 
-- **Java** (version 17 or above)
-- **Maven** (for dependency management)
-- **Lombok** (version 1.18.32)
-- **IntelliJ IDEA** (recommended IDE)
+## 🧠 Lombok Annotations Used
 
----
+| Annotation | Purpose |
+|------------|---------|
+| `@Data` | Generates getters, setters, `toString()`, `equals()`, and `hashCode()` |
+| `@AllArgsConstructor` | Generates a full-args constructor |
+| `@NoArgsConstructor` | Generates a no-args constructor |
+| `@EqualsAndHashCode(of = "brand")` | Restricts equality and hash code generation to the `brand` field only |
 
-## 🗂 Project Structure
+## 🖥️ Output Example
+
+✔️ `equals()` → `true`  
+✔️ `hashCode()` → Same for both
 
 
-- **`pom.xml`**: Contains Maven configurations and the Lombok dependency.
-- **`Car.java`**: A simple Java class annotated with Lombok to auto-generate common methods.
-- **`Main.java`**: The entry point of the application that creates and compares two `Car` objects.
-
----
-
-## 🚧 Getting Started
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/sherrankumaar/LombokTask.git
