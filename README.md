@@ -33,9 +33,9 @@ src/ Main.java // Main class to run and compare two car objects CarWithLombok.ja
 ## 🧪 Output Example
 
 ```text
-Car 1: Car{model='GLE', brand='Mercedes', year=2020, price=350000, color='white', quantity=5}
-Car 2: Car{model='GLC', brand='Mercedes', year=2023, price=200000, color='silver', quantity=3}
+Car 1: CarWithLombok(model=GLE, brand=Mercedes, year=2020, price=350000, color=white, quantity=5)
+Car 2: CarWithLombok(model=GLC, brand=Mercedes, year=2023, price=200000, color=silver, quantity=3)
 Are both cars equal? true
-Car1 hashCode: -12345678
-Car2 hashCode: -12345678
+Car 1 HashCode: -440739023
+Car 2 HashCode: -440739023
 
