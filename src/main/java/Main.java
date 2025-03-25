@@ -1,23 +1,25 @@
 public class Main {
     public static void main(String[] args) {
 
-        CarWithLombok carWithLombok1 = new CarWithLombok("GLE", "Mercedes", 2020, 350000, "white", 5);
-        CarWithLombok carWithLombok2 = new CarWithLombok("GLC", "Mercedes", 2023, 200000, "silver", 3);
+        CarWithLombok car1 = new CarWithLombok("GLE", "Mercedes", 2020, 350000, "white", 5);
+        CarWithLombok car2 = new CarWithLombok("GLC", "Mercedes", 2023, 200000, "silver", 3);
 
-        System.out.println(carWithLombok1);
-        System.out.println(carWithLombok2);
+        System.out.println("Before update:");
+        System.out.println("Car 1: " + car1);
+        System.out.println("Car 2: " + car2);
 
-        System.out.println(carWithLombok1.getColor());
+        car2.setModel("GLE");
+        car2.setYear(2020);
+        car2.setPrice(350000);
+        car2.setColor("white");
+        car2.setQuantity(5);
 
-        carWithLombok2.setModel("GLE");
-        carWithLombok2.setYear(2020);
-        carWithLombok2.setPrice(350000);
-        carWithLombok2.setColor("white");
-        carWithLombok2.setQuantity(5);
+        System.out.println("\nAfter update:");
+        System.out.println("Car 1: " + car1);
+        System.out.println("Car 2: " + car2);
 
-
-        System.out.println("Are these objects equal? " + carWithLombok1.equals(carWithLombok2));
-        System.out.println("The HashCode of this object is: " + carWithLombok1.hashCode());
-        System.out.println("The HashCode of this object is: " + carWithLombok2.hashCode());
+        System.out.println("Are both cars equal? " + car1.equals(car2));
+        System.out.println("Car 1 HashCode: " + car1.hashCode());
+        System.out.println("Car 2 HashCode: " + car2.hashCode());
     }
 }
