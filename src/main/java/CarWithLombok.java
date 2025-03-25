@@ -3,10 +3,11 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = "brand") // Only compare brand for equals() and hashCode()
+@EqualsAndHashCode(of = "brand")
 public class CarWithLombok {
     private String model;
     private String brand;
